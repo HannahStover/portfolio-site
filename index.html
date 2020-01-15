@@ -15,18 +15,20 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/b633fc80e7.js" crossorigin="anonymous"></script>
+  <!-- Animated -->
+    <link rel="stylesheet" href="animate.min.css">
     <!-- My Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <title>H R S</title>
   </head>
+
   <body>
+    
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,38 +62,67 @@
     </div>
     </nav>
 
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row row-header h-100 ">
-          <div class="text-break mt-5">
-            <h1>Full Stack Web Devel&shy;oper</h1>
-            <p class="lead"></p>
+      <!-- Full Page Image Header with Vertically Centered Content -->
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row row-header h-100 ">
+            <div class="text-break">
+              <h1 class="typewrite col-12 col-6" data-period="2000" data-type='[ "Welcome!", "My name is Hannah.", "I am a Full Stack Web Developer." ]'></h1>
+              <!-- trigger modal -->
+      <a class="" data-toggle="modal" data-target="#exampleModalCenter">
+        <h3 class="fixed-top animated swing">Let's talk.<br></h3>
+      </a>
+    </div>
+  </div>
+</div>
+</header>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <a role="button" href="https://www.linkedin.com/in/hannah-stover-09106737/" class="btn" target="_blank"><img src="https://img.icons8.com/android/32/000000/linkedin.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a role="button" class="btn" target="_blank" href="https://github.com/HannahStover"><img src="img/GitHub-Mark-32px.png" alt="github icon"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a role="button" href="mailto:hrosestover@gmail.com" class="btn"><img class="image-fluid" src="img/Email.png" height="28" width="35"
+                        alt="">
+                      </a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
     <!-- Page Content -->
-    <!-- About -->
-    <section class="py-5">
+    
+    <!-- break -->
+    <!-- <section class="py-5 break">
       <div class="container">
-        <h2 class="font-weight-light" id="about">About Hannah</h2>
+        <h3 class="font-weight-light" id="break"></h3>
+        
+      </div>
+    </section> -->
+
+    <!-- About
+    <section class="py-5 about">
+      <div class="container">
+        <h3 class="font-weight-light" id="about">About Hannah</h3>
         <p>I am a Full-Stack Developer skilled at developing complex solutions, possessing strong creative thinking skills, with high energy and integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quickly respond to the changing needs of the business. </p>
       </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="font-weight-light" id="contact">Contact Hannah</h2>
-        <i class="fab fa-accessible-icon"></i>
-
-
-      </div>
-    </section>
-
+    </section> -->
+</body>
     <!-- Optional JavaScript -->
+    <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -108,5 +139,4 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-  </body>
 </html>

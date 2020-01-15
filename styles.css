@@ -12,20 +12,67 @@ body {
   height: 100vh;
   min-height: 500px;
   padding: 25;
-  background-image: url('img/mae-mu-9z-veIxii6k-unsplash.jpg'); /* Photo by michaelmodephotography V. on Reshot */
+  justify-content: center;
+  /* background-image: url('img/mae-mu-9z-veIxii6k-unsplash.jpg');  Photo by michaelmodephotography V. on Reshot */
   background-size: cover;
+  background-color: #ff9200;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 h1 {
-  font-size: 100px;
-  opacity: 0.8;
+  margin-top: 95px;
+  font-size: 60px;
   display: inline-block;
   position: fixed;
   overflow-wrap: break-word;
   text-align: center;
+  color: white;
+}
+
+h3 {
+  margin-top: 475px;
+  font-size: 5em;
+  position: fixed;
+  color: black;
+  text-align: center;
+}
+
+.btn-group {
+  margin-top: 600px;
+  position: fixed;
+}
+
+/* @media screen and (max-width: 1200) {
+  h1 {
+    margin-top: 100px;
+    font-size: 175px;
+  }
+
+  h3 {
+    margin-top: 900px;
+    font-size: 8em;
+  }
+
+  .btn-group {
+    margin-top: 1200px;
+  }
+} */
+
+@media screen and (max-width: 680px) {
+  .title,
+  h1 {
+    margin-top: 80px;
+    font-size: 40;
+  }
+  h3 {
+    margin-top: 400px;
+    font-size: 3.5em;
+  }
+  .btn-group {
+    margin-top: 500px;
+  }
 }
 
 .navbar {
