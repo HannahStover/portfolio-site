@@ -1,3 +1,4 @@
+// Headline text typing
 let TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -56,5 +57,3 @@ window.onload = function() {
   css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
   document.body.appendChild(css);
 };
-
-Resources;

@@ -6,6 +6,8 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),
+    auto;
 }
 
 .masthead {
@@ -13,7 +15,7 @@ body {
   min-height: 500px;
   padding: 25;
   justify-content: center;
-  /* background-image: url('img/mae-mu-9z-veIxii6k-unsplash.jpg');  Photo by michaelmodephotography V. on Reshot */
+  /*background-image: url('img/mae-mu-9z-veIxii6k-unsplash.jpg'); /* Photo by michaelmodephotography V. on Reshot */
   background-size: cover;
   background-color: #ff9200;
   background-attachment: fixed;
@@ -23,55 +25,91 @@ body {
 
 h1 {
   margin-top: 95px;
-  font-size: 60px;
+  font-size: 80px;
   display: inline-block;
   position: fixed;
   overflow-wrap: break-word;
   text-align: center;
-  color: white;
+  color: whitesmoke;
 }
 
 h3 {
   margin-top: 475px;
-  font-size: 5em;
+  font-size: 4em;
   position: fixed;
   color: black;
   text-align: center;
 }
 
-.btn-group {
-  margin-top: 600px;
-  position: fixed;
+h3:hover {
+  color: whitesmoke;
 }
 
-/* @media screen and (max-width: 1200) {
-  h1 {
-    margin-top: 100px;
-    font-size: 175px;
-  }
+.modal div.modal-content {
+  /*background-image: url('img/mae-mu-9z-veIxii6k-unsplash.jpg'); /* Photo by michaelmodephotography V. on Reshot */
+  background: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: 0px;
+}
 
-  h3 {
-    margin-top: 900px;
-    font-size: 8em;
-  }
-
-  .btn-group {
-    margin-top: 1200px;
-  }
+/* .modal-dialog {
+  opacity: 0.6;
 } */
 
-@media screen and (max-width: 680px) {
-  .title,
-  h1 {
-    margin-top: 80px;
+h2 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+#about {
+  font-size: ;
+}
+
+.modal-open .container-fluid,
+.modal-open .container {
+  filter: blur(8px) grayscale(80%);
+  -webkit-filter: blur(8px) grayscale(80%);
+}
+
+/* @media (min-width: 400) {
+  .title h1 {
+    margin-top: 60px;
     font-size: 40;
   }
   h3 {
     margin-top: 400px;
     font-size: 3.5em;
   }
-  .btn-group {
-    margin-top: 500px;
+  h2 {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 600) {
+  .title h1 {
+    margin-top: 60px;
+    font-size: 175px;
+  }
+
+  h3 {
+    margin-top: 1000px;
+    font-size: 8em;
+  }
+}
+
+@media (min-width: 800) {
+  .title h1 {
+    margin-top: 150px;
+    font-size: 175px;
+  } */
+
+  h3 #text {
+    margin-top: 1200px;
+    font-size: 60px;
   }
 }
 

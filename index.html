@@ -17,7 +17,7 @@
     />
     <script src="https://kit.fontawesome.com/b633fc80e7.js" crossorigin="anonymous"></script>
   <!-- Animated -->
-    <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- My Stylesheet -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -48,13 +48,19 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" data-toggle="modal" data-target="#about-modal">
+                About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" data-toggle="modal" data-target="#portfolio-modal">
+                Portfolio
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" data-toggle="modal" data-target="#contact-modal">
+              Contact
+            </a>
             </li>
           </ul>
         </div>
@@ -65,43 +71,77 @@
       <!-- Full Page Image Header with Vertically Centered Content -->
       <header class="masthead">
         <div class="container h-100">
-          <div class="row row-header h-100 ">
+          <div class="row row-header h-100">
             <div class="text-break">
               <h1 class="typewrite col-12 col-6" data-period="2000" data-type='[ "Welcome!", "My name is Hannah.", "I am a Full Stack Web Developer." ]'></h1>
               <!-- trigger modal -->
-      <a class="" data-toggle="modal" data-target="#exampleModalCenter">
-        <h3 class="fixed-top animated swing">Let's talk.<br></h3>
+      <a class="" data-toggle="modal" data-target="#contact-modal">
+        <h3 class="fixed-top animated swing col-12">Let's talk.<br></h3>
       </a>
     </div>
   </div>
 </div>
 </header>
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- Modal Contact -->
+      <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <a role="button" href="https://www.linkedin.com/in/hannah-stover-09106737/" class="btn" target="_blank"><img src="https://img.icons8.com/android/32/000000/linkedin.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a role="button" class="btn" target="_blank" href="https://github.com/HannahStover"><img src="img/GitHub-Mark-32px.png" alt="github icon"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <div>
+                <h2 id="contact">Let's Talk.</h2>
+              </div>
+
+            <div class="modal-content text-center">
+                <a role="button" href="https://www.linkedin.com/in/hannah-stover-09106737/" class="btn" target="_blank"><img src="https://img.icons8.com/android/32/000000/linkedin.png"></a><br>
+                <a role="button" class="btn" target="_blank" href="https://github.com/HannahStover"><img src="img/GitHub-Mark-32px.png" alt="github icon"></a><br>
                 <a role="button" href="mailto:hrosestover@gmail.com" class="btn"><img class="image-fluid" src="img/Email.png" height="28" width="35"
                         alt="">
                       </a>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+
+      <!-- Modal About-->
+      <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div>
+          <div class="media">
+            <img src="img/hrs-swing.jpeg" class="mr-3" alt="Hannah Rose Stover" style="width: 50%">
+            <div class="media-body">
+              <h5 class="mt-0">Hannah Rose Stover</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+        </div>
+
+              <!-- <div class="column">
+                <div class="card">
+                    <img src="img/hrs-swing.jpeg" alt="Hannah Stover" style="width:75%; height:50%">
+
+                        <h4>Hannah Rose Stover</h4>
+      
+                </div> -->
+            </div>
+          </div>
+
+      <!-- Modal Portfolio-->
+      <div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+              <div>
+                <h2 id="portfolio">Portfolio</h2>
+              </div>
+
+            <div class="modal-content text-center">
+                <a role="button" href="https://www.linkedin.com/in/hannah-stover-09106737/" class="btn" target="_blank"><img src="https://img.icons8.com/android/32/000000/linkedin.png"></a><br>
+                <a role="button" class="btn" target="_blank" href="https://github.com/HannahStover"><img src="img/GitHub-Mark-32px.png" alt="github icon"></a><br>
+                <a role="button" href="mailto:hrosestover@gmail.com" class="btn"><img class="image-fluid" src="img/Email.png" height="28" width="35"
+                        alt="">
+                      </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
     <!-- Page Content -->
     
@@ -120,7 +160,7 @@
         <p>I am a Full-Stack Developer skilled at developing complex solutions, possessing strong creative thinking skills, with high energy and integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quickly respond to the changing needs of the business. </p>
       </div>
     </section> -->
-</body>
+
     <!-- Optional JavaScript -->
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -139,4 +179,9 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+    
+
+    </body>
 </html>
