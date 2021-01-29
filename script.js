@@ -21,6 +21,17 @@ window.addEventListener('scroll', function (e) {
 //       clearInterval(runAnimation);
 //     }
 //   }
-//   // Loop the animation function
+// Loop the animation function
 //   var runAnimation = setInterval(animateScroll, 16);
 // });
+
+//Close Collapse Menu onClick
+
+$(function () {
+  var navMain = $('.navbar-collapse'); // avoid dependency on #id
+  // "a:not([data-toggle])" - to avoid issues caused
+  // when you have dropdown inside navbar
+  navMain.on('click', 'a:not([data-toggle])', null, function () {
+    navMain.collapse('hide');
+  });
+});
